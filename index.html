@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adeel Iqbal – Resume</title>
+  <style>
+    :root {
+      --primary-color: #0f2027;
+      --secondary-color: #2c5364;
+      --accent-color: #00fff0;
+      --text-color: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: var(--text-color);
+      padding: 40px 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container {
+      max-width: 900px;
+      width: 100%;
+      backdrop-filter: blur(16px);
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+      padding: 30px;
+      animation: fadeIn 0.8s ease-in;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: var(--accent-color);
+    }
+
+    h2 {
+      color: var(--accent-color);
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    p, li {
+      color: #e0f7fa;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .social-links {
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    .social-links a {
+      color: var(--accent-color);
+      margin-right: 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #ffffff;
+    }
+
+    a.download-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: var(--accent-color);
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    a.download-btn:hover {
+      background: #ffffff;
+      color: var(--primary-color);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 0.85rem;
+      color: #ccc;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .container {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Adeel Iqbal</h1>
+      <p>Web Developer</p>
+      <div class="social-links">
+        <a href="mailto:your.email@example.com">Email</a>
+        <a href="https://www.linkedin.com/in/adeel-iqbal-409810333" target="_blank">LinkedIn</a>
+        <a href="https://www.behance.net/ladlamalik7" target="_blank">Behance</a>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>About Me</h2>
+        <p>Creative web developer with a strong passion for building beautiful and functional web interfaces.</p>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>React, Git, Firebase</li>
+          <li>Responsive & Modern UI Design</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Experience</h2>
+        <p>Worked on several freelance web projects and internship roles in front-end development.</p>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <p>Bachelor's in Computer Science – ABC University</p>
+      </section>
+
+      <section>
+        <h2>Download Resume</h2>
+        <a class="download-btn" href="resume.pdf" download>Download PDF</a>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    &copy; 2025 Adeel Iqbal. All rights reserved.
+  </footer>
+
+</body>
+</html>
